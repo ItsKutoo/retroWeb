@@ -1,0 +1,97 @@
+<!--Author: Katie-->
+<!--Description: Project join the club(sign up) page-->
+
+<!DOCTYPE html>
+<html lang="en-IE">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="stylesheet.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <title>Sign up Page</title>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to the sign up page!</h1>
+            <nav>
+                <ul>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="gameEvents.html">Game Events</a></li>
+                    <li><a href="home.html">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+    <main>
+        <div id="form_box">
+        <form action="https://webdevcit.com/displayvalues.php" method="post">
+        <fieldset>
+            <legend>Sign up Information </legend>
+            <label for="name">Name: <input type="text" id="name" name="name" placeholder="Full name" required></label>  
+            <label for="email">Email:   <input type="email" id="email" name="email" required></label>
+            <label for="date">Date started in MTU:  <input type="date" id="date" name="date" required></label>
+            <label id="mtu_campus">MTU Campus: </label>
+            <select id="drop_down">
+                <option value="Select your campus">Select your campus</option>
+                <option value="A-Block">A-Block</option>
+                <option value="B-Block">B-Block</option>
+                <option value="D-Block">D-Block</option>
+                <option value="E-Block">E-Block</option>
+                <option value="F-Block">F-Block</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Interests</legend>
+        <div id="dept">
+            <label for="department">What's your department of study? <input type="text" id="department" name="department" required></label>   
+        </div>
+            <label for ="favourite_game">what's Your favourite retro game?  <input type="text" id="favourite_game" name="favourite_game" required></label>
+            <div id="check_container">
+            <label id="game_select">What selection of games are you interested in?</label>
+            <label><input name="interest" type="checkbox" value="pac_man" class="checkbox">Pac-Man</label>
+            <label><input name="interest" type="checkbox" value="monopoly" class="checkbox">Monopoly</label>
+            <label><input name="interest" type="checkbox" value="chess" class="checkbox">Chess</label>
+            <label><input name="interest" type="checkbox" value="pin_ball" class="checkbox">Pin-ball</label>
+            <label><input name="interest" type="checkbox" value="any" class="checkbox">Any</label>
+            <label><input name="interest" type="checkbox" value="all" class="checkbox">All</label>
+        </div>
+        </fieldset>
+        <fieldset>
+            <legend>More Details</legend>
+        <div id="radio_btn">
+            <label>Have you previously attended one of our clubs? </label>
+            <label><input name="club" type="radio" value="yes">yes</label>
+            <label><input name="club" type="radio" value="no">no</label>
+        </div>
+        <div id="interested_events">
+            <label>What events interested you?</label>
+            <label>Tell us why you want to join the club!</label>
+            <textarea id="tell_us" name="Tell us" cols="30" rows="4" placeholder="Why did you want to join?"></textarea>
+        </div>
+        </fieldset>
+        <fieldset>
+            <legend>Member Details</legend>
+            <label>Would you prefer a printed or virtual membership card?</label>
+        <div id="membership_card">
+            <label><input name="membership" type="radio" value="virtual" checked="checked">Virtual Card</label>
+            <label><input name="membership" type="radio" value="printed">Printed Card</label>
+        </div>
+            <label>Please upload a photo for your membership card:</label>
+            <input type="file" id="user_file" name="user_file">
+        </fieldset>    
+            <input type="submit" value="submit">
+            <input type="reset" value="clear">
+        </form>
+        </div>
+    </main>
+    <footer>
+        <details> 
+            <summary id="summary">&copy;2024 Retro Games Club</summary>
+            <p>by Katie Ryan.</p>
+            <p>All content and images on this website are property of Katie Ryan</p>
+        </details>
+    </footer>
+    </body>
+</html>

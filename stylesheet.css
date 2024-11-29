@@ -1,0 +1,379 @@
+/*Comments to remind myself as Im going along*/
+/*Author: Katie Ryan, StudentID R00260255*/
+/*Imgs taken by me in shop*/
+/*I used these colours for the webpage as I think it looks nice, and fits the retro look*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(210, 186, 134);
+    height: 100%;
+}
+header{
+    background-color: #a72400;
+    border: 4px solid rgba(246, 153, 30, 0.847);
+    border-radius: 5px;
+    width: 100%;
+    display: inline-block;
+}
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.4em;
+    padding: 10px;
+}
+nav a{
+    border: 2px solid black;
+    width: 100px;
+    text-decoration: none;
+    border-radius: 15px;
+    text-align: center;
+    color: black;
+    background-color: aliceblue;
+    padding: 10px;
+    display: inline-block;
+    margin: 10px;
+}
+nav li {
+    list-style: none;
+    float: right;
+    
+}
+ul{
+    margin: 0; 
+    padding: 0;
+}
+nav a:hover{
+    background-color: rgb(55, 2, 102);
+    color: white;
+}
+.flex_box { 
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    width: 100%;
+}
+.column{
+    flex: 1 0 auto;
+    width: 30%;
+    text-align: center;
+    margin: 10px 10px 0 10px; 
+    background-color:  rgba(246, 153, 30, 0.847);
+    border-radius: 10px;
+}
+.column:first-child{
+    margin-right: 20px;
+}
+.column:last-child{ 
+    padding: 1.7em; 
+}
+p{
+    font-family:'roboto mono', Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+.column h2, h3{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #A1D4B1;
+    border: 2px solid #a72400;
+    border-radius: 5px;
+    margin: 5px;
+}
+.button{ 
+    border: 2px solid black;
+    width: 100px;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 15px;
+    text-align: center;
+    color: black;
+    background-color: aliceblue;
+    display: inline-block;
+}
+#button:hover{
+    background-color: rgb(55, 2, 102);
+    color: white;
+}
+.iframe_box{ 
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+}
+iframe{
+    border: 10px solid rgba(246, 153, 30, 0.847);
+    float: right;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+footer{
+    flex-shrink: 0;
+    
+}
+details{
+    background-color: #a72400;
+    border-radius: 5px;
+    color: azure;
+}
+#summary{
+    background-color: rgb(210, 186, 134);
+    color: black;
+    font-size: 20px;
+}
+
+/*GamesEvent.html*/
+table{
+    width: 100%;
+    background-color: rgba(246, 153, 30, 0.847);
+}
+th, td{
+    border: 2px solid rgb(182, 251, 189);
+    padding: 10px 15px; 
+    font-size: 20px;
+}
+.table_caption{
+    font-size: 2em;
+    text-align: center;
+    padding: 10px 15px;
+}
+th{
+    background-color: rgb(45, 40, 40);
+    color: rgb(182, 251, 189);
+    font-size: 2em;
+    
+}
+#event_section{
+    background-color: #A8D5E3;
+    border: 2px solid rgb(253, 125, 202);
+    border-radius: 20px;
+    margin: 10px 15px;
+}
+#event_section h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#event_section p{
+    font-family:'roboto mono', Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;  
+}
+#event_section h2{
+    text-align: center;
+}
+#events_btn{
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    background-color: #A8D5E3;  
+}
+#events_btn:hover{
+    padding: 2px; 
+    background-color: rgb(116, 241, 255);
+    border-radius: 2px;
+    color: rgb(0, 0, 0);
+}
+/*Form.html*/
+
+/*PUT FORM IN DIV CONTAINER*/ 
+#form_box{
+    margin: 10px auto; 
+    width: 95%;
+    background-color: rgba(246, 153, 30, 0.847);
+    border-radius: 5px;
+}
+input{
+    display: flex;
+    width: 100%;
+    padding: 12px;
+    margin: 10px;
+    box-sizing: border-box;
+    margin: 20px 0;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    color: black;
+}
+label{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px;
+}
+textarea{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px 0;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    color: black;
+    resize: none;
+}
+select{
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+input[type="submit"], input[type="reset"]{
+    text-decoration: none;
+    border-radius: 15px;
+    text-align: center;
+    color: black;
+    background-color: aliceblue;
+    display: inline-block; 
+}
+input[type="submit"]:hover, input[type="reset"]:hover{
+    background-color: rgb(55, 2, 102);
+    color: aliceblue;
+}
+fieldset{
+    border: 2px solid #a72400;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+legend{
+    font-size: 20px;
+    border: 2px solid #a72400;
+    border-radius: 5px;
+    background-color: #A1D4B1;
+    padding: 5px;
+}
+#check_container{
+    box-sizing: border-box;
+    text-align: center;
+    padding: 25px;
+    margin: 14px;
+    font-size: 20px;
+}
+.checkbox{
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+#radio_btn{
+    display: flex;
+    flex-direction: row;
+    margin: 14px;
+}
+#interested_events{
+    margin: 10px;
+}
+#membership_card{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+#user_file{
+    border-style: none; 
+    font-size: 20px;
+    padding: 10px;
+    width: 30%;
+    background-color: white;
+}
+#mtu_campus{
+    box-sizing: border-box;
+}
+/*Contact.html*/
+.contact_container{
+    display: flex;
+    margin: auto;
+}
+span{
+    color: #144169;
+    background-color: azure;
+    border-radius: 5px;
+}
+.contact_column{
+    flex: 1 auto;
+    width: 30%;
+    margin-left: 1em;
+    text-align: center;
+    background-color: rgba(246, 153, 30, 0.847);
+    border-radius: 5px;
+    margin-bottom: 2em;
+}
+.contact_column .our_info{
+    font-size: 2em;
+    margin: 10px;
+}
+#socials{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+#socials a{
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+#socials a:hover{
+    background-color: aliceblue;
+    color: black;
+    border-radius: 10px;
+}
+#socials img{
+    margin: 1em;
+}
+.info{
+    text-decoration: none;
+    color: black;
+}
+.info:hover{
+    background-color: rgb(55, 2, 102);
+    color: aliceblue;
+    border-radius: 10px;
+}
+#form_header{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+}
+/*aboutUs.html*/
+.aboutclub_img{
+    box-sizing: border-box;
+    margin: 10px;
+    border: 4px solid #a72400;
+}
+#ques_list{
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(246, 153, 30, 0.847);
+    border-radius: 5px;
+}
+.freq_questions{
+    list-style: disc;
+    font-size: 20px;
+}
+.benefit_list{
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px;
+}
+@media only screen and (max-width: 480px) {
+    html {margin: 0;}
+    body {width: auto;}
+    nav a {display: block;
+    font-size: 120%;
+    margin:0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .column{
+    width: 100%;
+    }
+} 
+@media screen and (max-width: 992px) {
+    .column {
+    width: 50%;
+    }
+}

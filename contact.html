@@ -1,0 +1,65 @@
+<!--Author: Katie-->
+<!--Description: Project Contact us page-->
+
+<!DOCTYPE html>
+<html lang="en-IE">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="stylesheet.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <title>Contact us page</title>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to our contact page!</h1>
+            <nav>
+                <ul>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="form.html">Sign up Form</a></li>
+                    <li><a href="gameEvents.html">Game Events</a></li>
+                    <li><a href="home.html">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+    <main>
+        <h1>To contact us please refer to the details below >>>>>></h1>
+        <div class="contact_container">
+        <div class="contact_column">
+        <p class="our_info"><span>Address:</span> Bishopstown, cork, Ireland,T12 P928.</p>
+        <p class="our_info"><span>Email:</span> <a href="mailto:infocork@mtu.ie" class="info">infocork@mtu.ie</a></p>
+        <p class="our_info"><span>Number:</span> <a href="tel:+353214326100" class="info">Call us on +353-21-4326100</a></p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4925.251061959672!2d-8.539683451746951!3d51.886047723599795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x484491de5fdd3135%3A0xc15ee797da7bd2f6!2sMunster%20Technological%20University!5e0!3m2!1sen!2sus!4v1732564809309!5m2!1sen!2sus" width="450" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>Check the map above to find our location</p>
+    </div>
+    <div class="contact_column">
+        <form id="contact_form" action="https://webdevcit.com/displayvalues.php" method="post">
+            <h2 id="form_header">Alternately you can fill out our contact form and we'll get back to you!</h2>
+            <label for="name">Name: <input type="text" id="name" name="name" required></label>
+            <label for="email">Email:   <input type="email" id="email" name="email" required></label>
+            <label for="message">Message: <textarea id="message" name="message" cols="30" rows="10"></textarea></label>
+            <input type="submit" value="Submit">
+            <input type="reset" value="clear">
+        </form>
+    </div>
+        <div class="contact_column">
+            <h2>Check out our social medias!</h2>
+            <div id="socials">
+            <a href="https://www.facebook.com/myMTU/"><img src="images/Facebook.png" height="100" width="100" alt="Facebook logo">Facebook</a>
+            <a href="https://x.com/MTU_ie?mx=2"><img src="images/X.png" height="100" width="100" alt="X logo">X</a>
+            <a href="https://www.instagram.com/MTU_ie/"><img src="images/Instagram.png" height="100" width="100" alt="Instagram logo">Instagram</a>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <details> 
+            <summary id="summary">&copy;2024 Retro Games Club</summary>
+            <p>by Katie Ryan.</p>
+            <p>All content and images on this website are property of Katie Ryan</p>
+        </details>
+    </footer>
+    </body>
+</html>
